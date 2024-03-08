@@ -44,7 +44,7 @@ jobs:
         mkdir -p /opt/images/
     - name: Build Firmware
       env:
-        TNAME: MI-R4A
+        TNAME: RM2100
         KERNEL: 4.4
       run: |
         cd /opt/rt-n56u/trunk
@@ -125,5 +125,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: MI-R4A-20240309
+        name: RM2100-20240309
         path: /opt/images
